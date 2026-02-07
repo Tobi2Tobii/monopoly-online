@@ -11,13 +11,12 @@ import {
 
 // --- DEINE FIREBASE CONFIG (BITTE HIER EINFÜGEN) ---
 const firebaseConfig = {
-  apiKey: "AIzaSyAh7gH0IWfrVljO8CVYHx56wMjojawZP9E",
-  authDomain: "monopoly-game-e6851.firebaseapp.com",
-  projectId: "monopoly-game-e6851",
-  storageBucket: "monopoly-game-e6851.firebasestorage.app",
-  messagingSenderId: "957637399095",
-  appId: "1:957637399095:web:3d1874700b2b29fefc25b2",
-  measurementId: "G-ZQEQ5W2R9M"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 // Initialisiere Firebase
